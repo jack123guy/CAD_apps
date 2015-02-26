@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".OutputPage" >
+
+    <TextView
+        android:id="@+id/TextThankyou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/ButtonShow"
+        android:layout_marginBottom="30dp"
+        android:textSize="35sp"
+        android:text="誠摯感謝您的填答！！！" />
+    
+    <Button
+        android:id="@+id/ButtonShow"
+        android:layout_width="235dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/ButtonRetry"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/show" />
+    
+    <Button
+        android:id="@+id/ButtonRetry"
+        android:layout_width="235dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/retry" />
+
+    <Button
+        android:id="@+id/ButtonExit"
+        android:layout_width="235dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ButtonRetry"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/end" />
+
+</RelativeLayout>

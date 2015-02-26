@@ -1,0 +1,679 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".InputPage3" >
+        
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+    <TextView
+        android:id="@+id/TextLyingAsthma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/NumLyingAsthma"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp"
+        android:text="１１. 躺著會更喘?" />
+    
+    <TextView
+        android:id="@+id/NumLyingAsthma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/DetailLyingAsthma2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="25sp"
+        android:text="0.0" />
+    
+    <TextView
+        android:id="@+id/DetailLyingAsthma1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextLyingAsthma"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="0：無" />
+    
+    <TextView
+        android:id="@+id/DetailLyingAsthma2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextLyingAsthma"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="10：非常明顯" />
+
+    <SeekBar
+        android:id="@+id/BarLyingAsthma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/DetailLyingAsthma1"
+        android:layout_marginLeft="5dp"
+        android:max="100"
+        android:progress="0" />
+    
+    <TextView
+        android:id="@+id/TextHeartBurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BarLyingAsthma"
+        android:layout_toLeftOf="@+id/NumHeartBurn"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:text="１２. 是否會感覺到胃灼熱？其程度為？" />
+    
+    <TextView
+        android:id="@+id/NumHeartBurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/DetailHeartBurn3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="25sp"
+        android:text="0.0" />
+    
+    <TextView
+        android:id="@+id/DetailHeartBurn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextHeartBurn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="0：沒有灼熱感" />
+    
+    <TextView
+        android:id="@+id/DetailHeartBurn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TextHeartBurn"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="5：中等灼熱感" />
+    
+    <TextView
+        android:id="@+id/DetailHeartBurn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextHeartBurn"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="10：嚴重灼熱趕" />
+
+    <SeekBar
+        android:id="@+id/BarHeartBurn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/DetailHeartBurn1"
+        android:layout_marginLeft="5dp"
+        android:max="100"
+        android:progress="0" />
+    
+    <TextView
+        android:id="@+id/TextNausea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BarHeartBurn"
+        android:layout_toLeftOf="@+id/NumNausea"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:text="１３. 噁心、嘔吐的頻率？" />
+    
+    <TextView
+        android:id="@+id/NumNausea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/DetailNausea3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="25sp"
+        android:text="0.0" />
+    
+    <TextView
+        android:id="@+id/DetailNausea1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextNausea"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="0：很少 幾乎不" />
+    
+    <TextView
+        android:id="@+id/DetailNausea2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TextNausea"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="5：有時會" />
+    
+    <TextView
+        android:id="@+id/DetailNausea3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextNausea"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="10：經常 總是" />
+
+    <SeekBar
+        android:id="@+id/BarNausea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/DetailNausea1"
+        android:layout_marginLeft="5dp"
+        android:max="100"
+        android:progress="0" />
+    
+    <TextView
+        android:id="@+id/TextSyncope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BarNausea"
+        android:layout_toLeftOf="@+id/NumSyncope"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:text="１４. 最近有昏厥、意識喪失的情形？" />
+    
+    <TextView
+        android:id="@+id/NumSyncope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/DetailSyncope3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="25sp"
+        android:text="0.0" />
+    
+    <TextView
+        android:id="@+id/DetailSyncope1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextSyncope"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="0：無" />
+    
+   
+    <TextView
+        android:id="@+id/DetailSyncope3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextSyncope"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="10：經常 " />
+
+    <SeekBar
+        android:id="@+id/BarSyncope"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/DetailSyncope1"
+        android:layout_marginLeft="5dp"
+        android:max="100"
+        android:progress="0" />
+    
+    <TextView
+        android:id="@+id/TextColdSweat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BarSyncope"
+        android:layout_toLeftOf="@+id/NumColdSweat"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:text="１５. 伴隨有冒冷汗的情形?" />
+    
+    <TextView
+        android:id="@+id/NumColdSweat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/DetailColdSweat3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="25sp"
+        android:text="0.0" />
+    
+    <TextView
+        android:id="@+id/DetailColdSweat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextColdSweat"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="0：很少 幾乎不" />
+    
+    <TextView
+        android:id="@+id/DetailColdSweat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TextColdSweat"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="5：有時會" />
+    
+    <TextView
+        android:id="@+id/DetailColdSweat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextColdSweat"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="10：經常 總是" />
+
+    <SeekBar
+        android:id="@+id/BarColdSweat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/DetailColdSweat1"
+        android:layout_marginLeft="5dp"
+        android:max="100"
+        android:progress="0" />
+    
+    <TextView
+        android:id="@+id/TextlyingRelieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BarColdSweat"
+        android:layout_toLeftOf="@+id/NumlyingRelieve"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:text="１６. 平躺時可以緩解不適症狀？" />
+    
+    <TextView
+        android:id="@+id/NumlyingRelieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/DetaillyingRelieve2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="25sp"
+        android:text="0.0" />
+    
+    <TextView
+        android:id="@+id/DetaillyingRelieve1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextlyingRelieve"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="0：無法緩解不適" />
+    
+    <TextView
+        android:id="@+id/DetaillyingRelieve2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextlyingRelieve"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="10：可以緩解疼痛或不適" />
+
+    <SeekBar
+        android:id="@+id/BarlyingRelieve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/DetaillyingRelieve1"
+        android:layout_marginLeft="5dp"
+        android:max="100"
+        android:progress="0" />
+    
+    <TextView
+        android:id="@+id/TextRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BarlyingRelieve"
+        android:layout_toLeftOf="@+id/NumRest"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:text="１７. 休息是否可以緩解疼痛或不適感？" />
+    
+    <TextView
+        android:id="@+id/NumRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/DetailRest2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="25sp"
+        android:text="0.0" />
+    
+    <TextView
+        android:id="@+id/DetailRest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextRest"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="0：無法緩解不適" />
+    
+    <TextView
+        android:id="@+id/DetailRest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextRest"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="10：可以緩解疼痛不適" />
+
+    <SeekBar
+        android:id="@+id/BarRest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/DetailRest1"
+        android:layout_marginLeft="5dp"
+        android:max="100"
+        android:progress="0" />
+    
+    <TextView
+        android:id="@+id/TextNTG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BarRest"
+        android:layout_toLeftOf="@+id/NumNTG"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:text="１８. 含舌下錠可以緩解疼痛？" />
+    
+    <TextView
+        android:id="@+id/NumNTG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/DetailNTG2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="25sp"
+        android:text="0.0" />
+    
+    <TextView
+        android:id="@+id/DetailNTG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextNTG"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="0：無法緩解不適" />
+    
+    <TextView
+        android:id="@+id/DetailNTG2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextNTG"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="10：可以緩解疼痛不適" />
+
+    <SeekBar
+        android:id="@+id/BarNTG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/DetailNTG1"
+        android:layout_marginLeft="5dp"
+        android:max="100"
+        android:progress="0" />
+    
+    <CheckBox android:id="@+id/BoxNTG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BarNTG"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="沒試過舌下錠不清楚效果"
+        android:textSize = "20sp"
+        android:textColor="@color/red" />
+    
+    <TextView
+        android:id="@+id/TextMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BoxNTG"
+        android:layout_toLeftOf="@+id/NumMedicine"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:text="１９. 吃胃藥是否可以緩解疼痛或不適？" />
+    
+    <TextView
+        android:id="@+id/NumMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/DetailMedicine2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="25sp"
+        android:text="0.0" />
+    
+    <TextView
+        android:id="@+id/DetailMedicine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextMedicine"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="0：無法緩解不適" />
+    
+    <TextView
+        android:id="@+id/DetailMedicine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextMedicine"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="10：可以緩解疼痛不適" />
+
+    <SeekBar
+        android:id="@+id/BarMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/DetailMedicine1"
+        android:layout_marginLeft="5dp"
+        android:max="100"
+        android:progress="0" />
+    
+    <CheckBox android:id="@+id/BoxMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BarMedicine"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="沒吃過胃藥不清楚效果"
+        android:textSize = "20sp"
+        android:textColor="@color/red" />
+    
+    <TextView
+        android:id="@+id/TextEatRelieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BoxMedicine"
+        android:layout_toLeftOf="@+id/NumEatRelieve"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:text="２０. 吃東西可以緩解疼痛或不適感？" />
+    
+    <TextView
+        android:id="@+id/NumEatRelieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/DetailEatRelieve2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="25sp"
+        android:text="0.0" />
+    
+    <TextView
+        android:id="@+id/DetailEatRelieve1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextEatRelieve"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="0：不會有影響" />
+    
+    <TextView
+        android:id="@+id/DetailEatRelieve2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextEatRelieve"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="10：喘的很嚴重" />
+
+    <SeekBar
+        android:id="@+id/BarEatRelieve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/DetailEatRelieve1"
+        android:layout_marginLeft="5dp"
+        android:max="100"
+        android:progress="0" />
+    
+    <CheckBox android:id="@+id/BoxEat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BarEatRelieve"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="沒有特別注意所以不清楚效果"
+        android:textSize = "20sp"
+        android:textColor="@color/red" />
+    
+     <Button
+        android:id="@+id/ButtonDone"
+        android:layout_width="150dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/BoxEat"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/finish" />
+    
+    <Button
+        android:id="@+id/ButtonBack"
+        android:layout_width="150dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/BoxEat"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back" />
+    
+        </RelativeLayout>
+        </ScrollView>
+
+</RelativeLayout>

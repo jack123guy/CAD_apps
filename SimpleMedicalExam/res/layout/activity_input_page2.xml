@@ -1,0 +1,751 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".InputPage2" >
+
+    <TextView
+        android:id="@+id/TextShowID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textIsSelectable="true"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextShowID"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="15dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextStuffy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/chkHL"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/NumStuffy"
+                android:text="１. 最近曾感到胸悶的程度？"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/NumStuffy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/DetailStuffy3"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="0.0"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/DetailStuffy1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextStuffy"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="0：無胸悶症狀"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailStuffy2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextStuffy"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="5：中等程度胸悶"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailStuffy3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextStuffy"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="10：胸悶嚴重"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <SeekBar
+                android:id="@+id/BarStuffy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/DetailStuffy1"
+                android:layout_marginLeft="5dp"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/TextUpStomach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/BarStuffy"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/NumUpStomach"
+                android:text="２. 最近曾感到上腹部疼痛的程度？"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/NumUpStomach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/DetailUpStomach3"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="0.0"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/DetailUpStomach1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextUpStomach"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="0：無上腹痛"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailUpStomach2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextUpStomach"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="5：中等程度上腹痛"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailUpStomach3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextUpStomach"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="10：嚴重上腹痛"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <SeekBar
+                android:id="@+id/BarUpStomach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/DetailUpStomach1"
+                android:layout_marginLeft="5dp"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/TextTear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/BarUpStomach"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/NumTear"
+                android:text="３. 最近曾感覺到胸部有撕裂痛的程度？"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/NumTear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/DetailTear3"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="0.0"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/DetailTear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextTear"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="0：無撕裂痛"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailTear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextTear"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="5：中等程度撕裂痛"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailTear3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextTear"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="10：嚴重撕裂痛"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <SeekBar
+                android:id="@+id/BarTear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/DetailTear1"
+                android:layout_marginLeft="5dp"
+                android:max="100"
+                android:progress="0" />
+
+            <CheckBox
+                android:id="@+id/BoxChest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BarTear"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="無上述疼痛症狀　（若此處勾選則直接跳至第６題作答）"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/TextPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/BoxChest"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/NumPosition"
+                android:text="４. 胸部或上腹部疼痛的位置"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/NumPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/DetailPosition3"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="0.0"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/DetailPosition1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextPosition"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="0：左胸附近"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailPosition2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextPosition"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="5：中央胸骨附近"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailPosition3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextPosition"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="10：右胸附近"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <SeekBar
+                android:id="@+id/BarPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/DetailPosition1"
+                android:layout_marginLeft="5dp"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/TextRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/BarPosition"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/NumRange"
+                android:text="５. 感到胸部或上腹部疼痛的範圍？"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/NumRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/DetailRange2"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="0.0"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/DetailRange1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextRange"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="0：局部 "
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailRange2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextRange"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="10：廣泛 "
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <SeekBar
+                android:id="@+id/BarRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/DetailRange1"
+                android:layout_marginLeft="5dp"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/TextShoulder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/BarRange"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/NumShoulder"
+                android:text="６. 胸痛時延伸到肩膀或下巴"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/NumShoulder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/DetailShoulder3"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="0.0"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/DetailShoulder1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextShoulder"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="0：不曾肩膀疼痛"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailShoulder2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextShoulder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="5：中等程度疼痛"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailShoulder3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextShoulder"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="10：嚴重肩膀疼痛"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <SeekBar
+                android:id="@+id/BarShoulder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/DetailShoulder1"
+                android:layout_marginLeft="5dp"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/TextPressPain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/BarShoulder"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/NumPressPain"
+                android:text="７. 是否有壓痛點(胸痛的位置用手按壓，胸痛程度會加劇)"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/NumPressPain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/DetailPress2"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="0.0"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/DetailPress1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextPressPain"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="0：無特定壓痛點"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailPress2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextPressPain"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="10：有壓痛點"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <SeekBar
+                android:id="@+id/BarPressPain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/DetailPress1"
+                android:layout_marginLeft="5dp"
+                android:max="100"
+                android:progress="0" />
+
+            <CheckBox
+                android:id="@+id/BoxPain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BarPressPain"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="無上述所有疼痛症狀　（若此處勾選則直接翻頁繼續作答）"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/TextDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/BoxPain"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/NumDuration"
+                android:text="８. 疼痛持續時間? "
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/NumDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/DetailDuration3"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="0.0"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/DetailDuration1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextDuration"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="0：數秒鐘"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailDuration2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextDuration"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="5：數分鐘"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailDuration3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextDuration"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="10：數小時"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <SeekBar
+                android:id="@+id/BarDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/DetailDuration1"
+                android:layout_marginLeft="5dp"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/TextExercise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/BarDuration"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/NumExercise"
+                android:text="９. 運動是否造成胸痛加劇？"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/NumExercise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/DetailExercise2"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="0.0"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/DetailExercise1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextExercise"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="0：不會"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailExercise2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextExercise"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="10：嚴重加劇"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <SeekBar
+                android:id="@+id/BarExercise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/DetailExercise1"
+                android:layout_marginLeft="5dp"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/TextBreathe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/BarExercise"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/NumBreathe"
+                android:text="１０. 最近曾感到呼吸困難、喘不過氣？"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/NumBreathe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/DetailBreathe2"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="0.0"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/DetailBreathe1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextBreathe"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="0：無"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/DetailBreathe2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextBreathe"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="10：非常明顯"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+
+            <SeekBar
+                android:id="@+id/BarBreathe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/DetailBreathe1"
+                android:layout_marginLeft="5dp"
+                android:max="100"
+                android:progress="0" />
+
+            <Button
+                android:id="@+id/ButtonNext"
+                android:layout_width="150dp"
+                android:layout_height="72dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/BarBreathe"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/next" />
+
+            <Button
+                android:id="@+id/ButtonHome"
+                android:layout_width="150dp"
+                android:layout_height="72dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/BarBreathe"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back" />
+            
+            <CheckBox
+                android:id="@+id/chkSmoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:text="抽菸" />
+            
+            <CheckBox
+                android:id="@+id/chkDM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/chkSmoke"
+                android:layout_marginTop="15dp"
+                 android:layout_marginLeft="15dp"
+                android:text="糖尿病" />
+            
+             <CheckBox
+                android:id="@+id/chkHTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chkDM"
+                android:text="高血壓" />
+
+             <CheckBox
+                 android:id="@+id/chkHL"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/chkSmoke"
+                 android:layout_toRightOf="@+id/chkHTN"
+                 android:text="高血脂" />
+            
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

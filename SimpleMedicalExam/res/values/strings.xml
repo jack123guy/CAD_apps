@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">簡易醫療檢測系統</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_input_page2">症狀輸入(一) : 疼痛及不適相關症狀</string>
+    <string name="title_activity_input_page3">症狀輸入(二) : 其他不適症狀</string>
+    <string name="title_activity_input_page4">症狀輸入(三) : 緩解症狀不適之動作</string>
+    <string name="title_activity_output_page">Thank you very much !</string>
+    <string name="title_activity_upload_page">確認輸入資料</string>
+
+</resources>
